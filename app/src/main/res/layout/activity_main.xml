@@ -8,36 +8,48 @@
     tools:context=".MainActivity">
 
     <FrameLayout
-        android:id="@+id/TopContainer"
+        android:id="@+id/topContainer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/teal_200"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
 
     <LinearLayout
-        android:id="@+id/ButtonsContainer"
-        android:layout_width="300dp"
-        android:layout_height="500dp"
-        android:background="@color/purple_200"
+        android:id="@+id/menuContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_orange_light"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/BottomContainer"
+        app:layout_constraintBottom_toTopOf="@+id/bottomContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopContainer">
+        app:layout_constraintTop_toBottomOf="@+id/topContainer" />
 
-    </LinearLayout>
+
 
     <FrameLayout
-        android:id="@+id/BottomContainer"
+        android:id="@+id/bottomContainer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="12dp"
         android:background="@color/teal_200"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
     </FrameLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
