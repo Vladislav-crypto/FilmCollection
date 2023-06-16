@@ -2,6 +2,7 @@ package com.devferens.filmcollection
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.devferens.filmcollection.databinding.ActivityMainBinding
 
@@ -15,9 +16,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        initButtons(view)
+
     }
 
-    private fun initButtons() {
+    private fun initButtons(view: View) {
         binding.buttonMenu.setOnClickListener {
             Toast.makeText(this, "Меню", Toast.LENGTH_SHORT).show()
         }
